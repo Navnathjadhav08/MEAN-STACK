@@ -1,0 +1,16 @@
+# Ignore everything by default
+*
+
+# Allow the src directory
+!src/
+!src/**
+
+# Ignore specific files or folders inside src if needed
+# For example, ignore temporary files or specific folders
+src/**/*.tmp
+src/**/*.log
+
+# Allow Git configuration files and README
+!.gitignore
+!.gitattributes
+!README.md
