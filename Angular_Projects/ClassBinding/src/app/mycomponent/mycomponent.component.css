@@ -1,0 +1,14 @@
+.success
+{
+    color: aqua;
+    font-family: cursive;
+    font-size: larger;
+
+}
+
+.failure
+{
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+}
