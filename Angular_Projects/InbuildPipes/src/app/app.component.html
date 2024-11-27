@@ -1,0 +1,45 @@
+<h1>Demonstration of inbuild pipes</h1>
+<div>
+    <!--  1. Date pipes-->
+      <h2>1. Date pipes</h2>
+      <p>Transforms a date value into a formatted string.</p>
+      <h3>{{today}}</h3>
+      <h3>Today is :{{today | date:'fullDate'}}</h3>
+      <h3>Today is :{{today | date:"short"}}</h3>
+      <h3>Today is :{{today | date:"shortDate"}}</h3>
+      <h3>Today is :{{today | date:"shortTime"}}</h3>
+</div>
+
+<div>
+  <!--  2. String pipes-->
+    <h2>2. String pipes</h2>
+    <p>Transforms a date value into a formatted string.</p>
+    <h3>{{message}}</h3>
+    <h3>message is :{{message | uppercase}}</h3>
+    <h3>message is :{{message | lowercase}}</h3>
+    <h3>message is :{{message | titlecase}}</h3>
+    <h3>message is :{{message | slice:8}}</h3>
+</div>
+
+<div>
+  <h2>3. JSON pipe</h2>
+  <h3>{{data | json}}</h3>
+</div>
+
+<div>
+  <h2>4. Number pipe</h2>
+  <h3>number is :{{no | number : '1.2-3'}}</h3>
+  <h3>number is :{{no | number : '3.2-5'}}</h3>
+  <h3>number is :{{no | number : '3.4-5'}}</h3>
+
+</div>
+
+<div>
+  <h2>5. Pipe for currency</h2>
+  <h3>{{rate | percent}}</h3>
+  <h3>{{78 | currency}}</h3>
+  <h3>{{78 | currency: 'INR'}}</h3>
+</div>
+
+
+<router-outlet/>
