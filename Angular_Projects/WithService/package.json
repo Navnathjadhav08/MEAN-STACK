@@ -1,5 +1,5 @@
 {
-  "name": "without-services",
+  "name": "with-service",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -20,7 +20,6 @@
     "@angular/router": "^17.3.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "without-services": "file:",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
