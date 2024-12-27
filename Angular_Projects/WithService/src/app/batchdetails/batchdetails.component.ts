@@ -11,7 +11,7 @@ import { BatchesService } from '../batches.service';
 })
 export class BatchdetailsComponent {
 
-  public Batches : any = []
+  public Batches : any = [];
 
   constructor(private batchobj : BatchesService){
     this.Batches = batchobj.getBatches()
