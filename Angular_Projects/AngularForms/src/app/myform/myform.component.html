@@ -1,0 +1,27 @@
+<p>myform works!</p>
+
+<div class="container-fluid">
+    <h2>Login Form</h2>
+
+    <form [formGroup] = "MyForm">
+        <div class="formGroup">
+            <label>User Name</label>
+            <input type = "text" class="form-control" formControlName="username">
+        </div>
+
+        <div class="formGroup">
+            <label>password</label>
+            <input type = "password" class="form-control" formControlName="password">
+        </div>
+
+        <div class="formGroup">
+            <label>Confirm Password</label>
+            <input type = "password" class="form-control" formControlName="ConfirmPass">
+        </div>
+
+        <button type="button" class="btn btn-success">Login</button>
+    </form>
+
+    {{MyForm.value | json}}
+
+</div>
